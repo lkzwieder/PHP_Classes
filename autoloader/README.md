@@ -28,7 +28,7 @@ $autoloader->set_path(__DIR__);
 if we have Autoload.php in the root (I do not recommend this), I prefer something like this
 
 ``` php
-require_once '/framework/Autoload.php';
+require_once 'framework/Autoload.php';
 $autoloader = Autoload::get_instance();
 $autoloader->set_path(__DIR__.DIRECTORY_SEPARATOR."framework");
 ```

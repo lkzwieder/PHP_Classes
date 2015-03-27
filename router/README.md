@@ -38,6 +38,13 @@ $route      | String    | yes   | You can set the route here, always start with 
 $handler    | Array     | no    | It can have the 'controller' and 'action' to be triggered when a request match the declared route, if no controller nor action, defaults are invoked.
 $options    | Array     | no    | This is when you can filter the params, if those params are unmet defaults are invoked.
 
+### Run!
+So, the only thing you need to do know is call to run.
+
+``` php
+$router->run():
+```
+
 ###A few things about this class
 - If an user request an undeclared route, default controller and action are invoked.
 - If a request match two different declared routes, the first one is triggered.

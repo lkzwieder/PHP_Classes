@@ -32,7 +32,7 @@ DEFAULT_ACTION: When no action/method is declared for a given route, the router 
 ``` php
 $router->set_route(String $route, Array $handler, Array $options);
 ```
-param | type | require | how it work
+Param | Type | Required | How it work
 ----        | ----      | ----  | ----
 $route      | String    | yes   | You can set the route here, always start with /
 $handler    | Array     | no    | It can have the 'controller' and 'action' to be triggered when a request match the declared route, if no controller nor action, defaults are invoked.

@@ -7,7 +7,7 @@ This router class was made with a few things in mind:
 - Performance
 - Built-in filters
 
-The result was 43 lines, 3 public methods and I think the mission was accomplished.
+The result was less than 50 lines, 3 public methods and I think the mission was accomplished.
 
 In order to use this class properly you need to instantiate, declare routes, and run!
 

@@ -34,9 +34,9 @@ $router->set_route(String $route, Array $handler, Array $options);
 ```
 Param | Type | Required | How it work
 ----        | ----      | ----  | ----
-$route      | String    | yes   | You can set the route here, always start with /
-$handler    | Array     | no    | It can have the 'controller' and 'action' to be triggered when a request match the declared route, if no controller nor action, defaults are invoked.
-$options    | Array     | no    | This is when you can filter the params, if those params are unmet defaults are invoked.
+$route      | String    | yes   | You can set the route here, always start with "/". Like this ``` "/users/insert" ```
+$handler    | Array     | no    | It can have the 'controller' and 'action' to be triggered when a request match the declared route, if no controller nor action, defaults are invoked. Like this ``` ['controller' => 'Users', 'action' => 'insert'] ```
+$options    | Array     | no    | This is when you can filter the params using regexes. Like this ``` ['param' => '[a-z]{3}', 'id' => '[\d]{1,8}'] ```
 
 ### Run!
 So, the only thing you need to do know is call to run.
